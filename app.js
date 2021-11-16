@@ -1,5 +1,5 @@
 function jarviswebshooter(){
-    jarvismakeroute("/jarvisjs","about.html");
+    jarvismakeroute("/jarvisjs/","about.html");
     jarvismakeroute("/jarvisjs/works","works.html");
     jarvismakeroute("/jarvisjs/service","service.html");
     jarvismakeroute("/jarvisjs/contact","contact.html");

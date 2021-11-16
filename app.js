@@ -1,8 +1,8 @@
 function jarviswebshooter(){
-    jarvismakeroute("/","about.html");
-    jarvismakeroute("/works","works.html");
-    jarvismakeroute("/service","service.html");
-    jarvismakeroute("/contact","contact.html");
+    jarvismakeroute("/jarvisjs","about.html");
+    jarvismakeroute("/jarvisjs/works","works.html");
+    jarvismakeroute("/jarvisjs/service","service.html");
+    jarvismakeroute("/jarvisjs/contact","contact.html");
     jarvisrender();
 }
 
@@ -41,7 +41,7 @@ function jarvisgetcontent(getcont){
 
 //set the path to URL and call to get view to user
 function jarvismakeview(path){
-     window.history.pushState('', '=', path);
+     window.history.pushState('', '=', "/jarvisjs"+path);
      jarvisrender();
 }
 

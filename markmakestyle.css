@@ -1,0 +1,67 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.mark-header{
+    display: block;
+    width: 100%;
+    background: white;
+    text-align: center;
+    padding: 15px 0;
+    position:fixed;
+    top: 0;
+    z-index: 10;
+    box-shadow: rgb(50 50 105 / 15%) 0px 2px 5px 0px, rgb(0 0 0 / 5%) 0px 1px 1px 0px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    letter-spacing: 4px;
+}
+
+#avenger-squad{
+    display: block;
+    margin: 4.2rem 10px;
+}
+.mark-footer{
+    display: block;
+    position: fixed;
+    bottom: 0;
+    background: rgb(255, 255, 255);
+    box-shadow: rgb(0 0 0 / 45%) -5px 20px 28px 11px;
+    z-index: 10;
+    width: 100%;
+}
+
+.mark-footer-items ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px;
+    padding: 10px;
+}
+
+.mark-footer-items ul li{
+    list-style: none;
+    padding: 10px;
+}
+.mark-footer-items ul li:hover{
+    background: #00000033;
+    border-radius: 25px;
+    padding: 5px 18px;
+    transition: 1s ease;
+}
+
+.mark-icons{
+    width: 30px;
+}
+
+.home-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+}

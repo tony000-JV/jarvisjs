@@ -19,9 +19,6 @@ function jarvisrender(){
     // window.location.pathname; 
     // window.history.pushState('page2', 'Title', '/marrk1');
     let needtoload=window.location.pathname; 
-    if(needtoload!="/"){
-        window.location.href="/";
-    }
     let avengers=document.getElementById("avenger-squad");
     fetch(fridayhas[needtoload])
         .then(response=>response.text())
@@ -44,8 +41,8 @@ function jarvisgetcontent(getcont){
 //set the path to URL and call to get view to user
 function jarvismakeview(path){
      window.history.pushState('', '=', "/jarvisjs"+path);
+    //  window.history.pushState('', '=', path);
      jarvisrender();
 }
-
 
 jarviswebshooter();

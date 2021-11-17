@@ -19,7 +19,9 @@ function jarvisrender(){
     // window.location.pathname; 
     // window.history.pushState('page2', 'Title', '/marrk1');
     let needtoload=window.location.pathname; 
-    console.log(fridayhas[needtoload])
+    if(needtoload!="/"){
+        window.location.href="/";
+    }
     let avengers=document.getElementById("avenger-squad");
     fetch(fridayhas[needtoload])
         .then(response=>response.text())

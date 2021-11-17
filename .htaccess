@@ -1,6 +1,25 @@
-# Redirect non-existing pages to index.php
-Options +SymLinksIfOwnerMatch 
-RewriteEngine On 
-RewriteCond %{REQUEST_FILENAME} !-f 
+ErrorDocument 404 http://localhost/jarvisjs/
+ErrorDocument 500 http://localhost/jarvisjs/
+
+# or map them to one error document:
+# ErrorDocument 404 /pages/errors/error_redirect.php
+# ErrorDocument 500 /pages/errors/error_redirect.php
+
+RewriteEngine On
+# RewriteBase /
+
+# always load index.html file first
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /index.html [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule . index.html [L]
+
+# RewriteCond %{REQUEST_URI} ^/404/$
+# RewriteRule ^(.*)$ /pages/errors/404.php [L]
+
+# RewriteCond %{REQUEST_URI} ^/500/$
+# RewriteRule ^(.*)$ /pages/errors/500.php [L]
+
+# or map them to one error document:
+#RewriteCond %{REQUEST_URI} ^/404/$ [OR]
+#RewriteCond %{REQUEST_URI} ^/500/$
+#RewriteRule ^(.*)$ /pages/errors/error_redirect.php [L]

@@ -46,7 +46,7 @@ body{
 
 .mark-footer-items ul li{
     list-style: none;
-    padding: 10px;
+    padding:5px 18px;
 }
 .mark-footer-items ul li:hover{
     background: #00000033;

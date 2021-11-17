@@ -1,5 +1,5 @@
-ErrorDocument 404 http://localhost/jarvisjs/
-ErrorDocument 500 http://localhost/jarvisjs/
+ErrorDocument 404 https://tony000-jv.github.io/jarvisjs/
+ErrorDocument 500 https://tony000-jv.github.io/jarvisjs/
 
 # or map them to one error document:
 # ErrorDocument 404 /pages/errors/error_redirect.php

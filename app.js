@@ -1,8 +1,10 @@
 function jarviswebshooter(){
     jarvismakeroute("/jarvisjs/","about.html");
+    jarvismakeroute("/jarvisjs/index","about.html");
     jarvismakeroute("/jarvisjs/works","works.html");
     jarvismakeroute("/jarvisjs/service","service.html");
     jarvismakeroute("/jarvisjs/contact","contact.html");
+    jarvismakeroute("/jarvisjs/404","jarvis404.html");
     jarvisrender();
 }
 
@@ -18,8 +20,16 @@ function jarvismakeroute(path,loadto){
 function jarvisrender(){
     // window.location.pathname; 
     // window.history.pushState('page2', 'Title', '/marrk1');
-    let needtoload=window.location.pathname; 
+    let needtoload=window.location.pathname;
+        if(needtoload.indexOf(".")!=-1){
+            needtoload=(needtoload.split("."))[0];
+            window.history.pushState('', '=',needtoload);
+        }
+        if(fridayhas[needtoload]=="" || fridayhas[needtoload]==null || fridayhas[needtoload]==undefined){
+            needtoload="/jarvisjs/404";
+        }
     let avengers=document.getElementById("avenger-squad");
+
     fetch(fridayhas[needtoload])
         .then(response=>response.text())
         .then(t=>{

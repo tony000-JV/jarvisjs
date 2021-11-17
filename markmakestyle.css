@@ -65,3 +65,73 @@ body{
     align-items: center;
     height: 75vh;
 }
+
+.mark-pageerror{
+    background: peachpuff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 15rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+}
+.mark-error-content h3 {
+    font-weight: 400;
+    margin: 5px;
+    font-size: 17px;
+    text-align: center;
+}
+
+.jarvis-btn{
+    display: block;
+    margin: 0 auto;
+    background: #282828;
+    border: none;
+    padding: 5px 18px;
+    color: #fff;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.mark-contact-header{
+    margin-top: 8rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+
+.tony-pic{
+    width: 150px;
+    height: 150px;
+    background: gray;
+    border-radius: 50%;
+}
+
+.tony-pic img{
+    width: 150px;
+        object-position: center;
+        height: 150px;
+        border-radius: 50%;
+}
+
+.tony-info{
+    margin-top: 1rem;
+    width: 90%;
+}
+
+.tony-name{
+    background: lightgray;
+    text-align: center;
+    width: 150px;
+    border-radius: 5px;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.tony-social-media{
+    margin-top: 1rem;
+    background: lightgray;
+    padding: 5px;
+    border-radius: 5px;
+}
